@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>New Tab</title>
+    <style>
+     * {
+       text-rendering: optimizeLegibility;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+     }
+
+     body {
+       margin: 0;
+       background-color: #eeeeee;
+     }
+
+     .container {
+       height: 100%;
+       position: relative;
+     }
+
+     #clock {
+       color: #bbbbbb;
+       text-align: center;
+       font-family: 'Fira Mono', monospace;
+       font-weight: 500;
+       font-size: 12em;
+     }
+
+     #salutation {
+       color: #bbbbbb;
+       text-align: center;
+       font-family: sans-serif;
+       font-weight: 300;
+       font-size: 4em;
+     }
+
+     .center {
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       margin-right: -50%;
+       transform: translate(-50%, -50%);
+     }
+    </style>
+    <script src="zentab.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="center">
+        <div id="clock"></div>
+        <div id="salutation"></div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
